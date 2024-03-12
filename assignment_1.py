@@ -35,3 +35,17 @@ class HashTable:
             self.table[key_hash] = []
 
         return None
+
+
+H = HashTable(5)
+H.insert("apple", 10)
+H.insert("orange", 20)
+H.insert("banana", 30)
+
+print(H.get("apple"))
+print(H.get("orange"))
+print(H.get("banana"))
+
+H.delete("orange")
+
+print(H.get("orange")) # виведе None

@@ -15,3 +15,10 @@ def binary_search(arr, value):
             right = middle - 1
 
     return iterations, arr[right] if right >= 0 else arr[0]
+
+arr = [1.7, 2.1, 3, 4.8, 6.0, 7, 8.4]
+target = 5.5
+
+iterations, upper_bound = binary_search(arr, target)
+print("Iterations:", iterations)
+print("Upper Bound:", upper_bound)
